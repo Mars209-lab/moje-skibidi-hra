@@ -60,7 +60,7 @@ int main(){
             cout << "utok = 4" << endl;
             cout << "mana = 7" << endl;
             cout << "specialni perky:" << endl;
-            cout << "klubicko, smrtelne vrhaci klubicko, vetsi sance na kriticke pozkozeni" << endl;
+            cout << "klubicko, smrtelne vrhaci klubicko, velke poskozeni" << endl;
             cout << "roztomilost, zmateni nepritele (nepritel ztraci tah)" << endl;
 
         }else if (volba == "zlodej"){
@@ -157,6 +157,7 @@ int main(){
         }else if (volbavesnice == "2"){
             if (zlataky >= 5){
                 maxhp += 1;
+                hp += 1;
                 zlataky -= 5;
                 cout << "max zivoty zvyseny na " << maxhp << endl;
                 cout << "______________________________________________________________________________" << endl;
@@ -167,6 +168,7 @@ int main(){
         }else if (volbavesnice == "3"){
             if (zlataky >= 5){
                 maxmana += 1;
+                mana += 1;
                 zlataky -= 5;
                 cout << "max mana zvysena na " << maxmana << endl;
                 cout << "______________________________________________________________________________" << endl;
